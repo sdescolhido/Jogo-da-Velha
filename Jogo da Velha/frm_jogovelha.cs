@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace Jogo_da_Velha
 {
+
+    //----------------------------------------------------------------------------------------------
     public partial class frm_jogovelha : Form
     {
 
@@ -74,16 +76,19 @@ namespace Jogo_da_Velha
             }
         }
 
+        //----------------------------------------------------------------------------------------------
         private void btreiniciar_Click(object sender, EventArgs e)
         {
             limpar();
         }
 
+        //----------------------------------------------------------------------------------------------
         private void btsair_Click(object sender, EventArgs e)
         {
             Close();
         }
 
+        //----------------------------------------------------------------------------------------------
         private void bt11_Click(object sender, EventArgs e)
         {
             if (rbx.Checked)
@@ -105,6 +110,7 @@ namespace Jogo_da_Velha
             vencedor();
         }
 
+        //----------------------------------------------------------------------------------------------
         private void bt12_Click(object sender, EventArgs e)
         {
             if (rbx.Checked)
@@ -125,6 +131,7 @@ namespace Jogo_da_Velha
             vencedor();
         }
 
+        //----------------------------------------------------------------------------------------------
         private void bt13_Click(object sender, EventArgs e)
         {
             if (rbx.Checked)
@@ -145,6 +152,7 @@ namespace Jogo_da_Velha
             vencedor();
         }
 
+        //----------------------------------------------------------------------------------------------
         private void bt21_Click_1(object sender, EventArgs e)
         {
             if (rbx.Checked)
@@ -165,6 +173,7 @@ namespace Jogo_da_Velha
             vencedor();
         }
 
+        //----------------------------------------------------------------------------------------------
         private void bt22_Click(object sender, EventArgs e)
         {
             if (rbx.Checked)
@@ -185,6 +194,7 @@ namespace Jogo_da_Velha
             vencedor();
         }
 
+        //----------------------------------------------------------------------------------------------
         private void bt23_Click(object sender, EventArgs e)
         {
             if (rbx.Checked)
@@ -205,6 +215,7 @@ namespace Jogo_da_Velha
             vencedor();
         }
 
+        //----------------------------------------------------------------------------------------------
         private void bt31_Click_1(object sender, EventArgs e)
         {
             if (rbx.Checked)
@@ -225,6 +236,7 @@ namespace Jogo_da_Velha
             vencedor();
         }
 
+        //----------------------------------------------------------------------------------------------
         private void bt32_Click_1(object sender, EventArgs e)
         {
             if (rbx.Checked)
@@ -245,6 +257,7 @@ namespace Jogo_da_Velha
             vencedor();
         }
 
+        //----------------------------------------------------------------------------------------------
         private void bt33_Click_1(object sender, EventArgs e)
         {
             if (rbx.Checked)
@@ -265,6 +278,7 @@ namespace Jogo_da_Velha
             vencedor();
         }
 
+        //----------------------------------------------------------------------------------------------
         public void vencedor()
         {
             if(
@@ -323,6 +337,7 @@ namespace Jogo_da_Velha
 
         }
 
+        //----------------------------------------------------------------------------------------------
         public void limpar()
         {
             bt11.Text = "";
@@ -339,6 +354,7 @@ namespace Jogo_da_Velha
             cont = 0;
         }
 
+        //----------------------------------------------------------------------------------------------
         public void habilitarBotoes()
         {
             bt11.Enabled = true;
